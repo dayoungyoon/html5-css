@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>폼과input태그</title>
+    <style media="screen">
+      ul{
+        list-style-type: none;
+      }
+      .red{
+        color: red;
+      }
+      li{
+        line-height: 200%;
+      }
+    </style>
+  </head>
+  <body>
+    <form name="search" action="search.php" method="post">
+      <input type="text" name="search" value="검색어를 입력해주세요">
+      <input type="button" name="" value="검색">
+
+    </form>
+    <form class="d" method="post">
+      <fieldset>
+        <label >
+          아이디:<input type="text" name="id" >
+          </label>
+          <label>비밀번호:<input type="password" name="password" >
+          </label>
+          <input type="submit" name="로그인" value="로그인">
+      </fieldset>
+
+      </form>
+      <h1>회원 가입을 환영합니다.</h1>
+      <fieldset>
+      <form  method="post">
+        <ul>
+          <li><label>아이디: <input type="text" name="" value=""></label><small class="red"> 4~15자리이내의영문과 숫자</small></li>
+          <li><label>이메일: <input type="email" name="" value=""></label></li>
+          <li><label>비밀번호: <input type="password" name="" value=""></label></li>
+          <li><label>비밀번호 확인: <input type="password" name="" value=""></label></li>
+          <input type="submit" name="" value="회원가입">
+          <input type="reset" name="" value="다시제출">
+        </ul>
+
+      </form>
+      </fieldset>
+
+      <fieldset>
+        <legend>좋아하는 과일은 무엇인가요?</legend>
+        <form class="" action="index.html" method="post">
+
+            <label for="">사과 <input type="radio" name="fruit" value=""></label>
+            <label for="">배 <input type="radio" name="fruit" value=""></label>
+
+        </form>
+      </fieldset>
+      <fieldset>
+        <form class="" action="index.html" method="post">
+          <label for="">날짜: <input type="date" name="" value="2017-09-30"></label>
+        </form>
+      </fieldset>
+      <fieldset>
+        <legend>신청자</legend>
+        <form class="" action="index.html" method="post">
+          <label for="">이름: <input type="text" name="" value="" placeholder="공백없이입력" autofocus required></label>
+          <label for="">학번: <input type="text" name="" value="" placeholder="10자리숫자" autofocus required></label>
+          <input type="submit" name="" value="제출">
+        </form>
+      </fieldset>
+      <fieldset>
+        <legend>학과를 선택하세요</legend>
+        <select class="class" name="">
+          <option value="건축공학과">건축공학과</option>
+          <option value="건축학과">건축학과</option>
+          <option value="기계공학과">기계공학과</option>
+          <option value="메카트로닉스공학과">메카트로닉스공학과</option>
+          <option value="에너지공학과">에너지공학과</option>
+          <option value="컴퓨터공학과">컴퓨터공학과</option>
+
+        </select>
+        <input type="submit" name="" value="제출">
+      </fieldset>
+      <fieldset>
+        <legend>학과를 선택하세요</legend>
+        <select class="" name="">
+          <optgroup label="공과대학">
+            <option value="건축공학과">건축공학과</option>
+            <option value="건축학과">건축학과</option>
+            <option value="기계공학과">기계공학과</option>
+            <option value="메카트로닉스공학과">메카트로닉스공학과</option>
+            <option value="에너지공학과">에너지공학과</option>
+            <option value="컴퓨터공학과">컴퓨터공학과</option>
+          </optgroup>
+          <optgroup label="인문대학">
+            <option value="">사학과</option>
+            <option value="">철학과</option>
+          </optgroup>
+
+        </select>
+        <input type="submit" name="" value="제출">
+      </fieldset>
+      <fieldset>
+        <legend>학과를 선택하세요</legend>
+        <input type="text" list="데이터 목록 id" name="" value="">
+          <datalist id="데이터 목록 id">
+            <option value="건축공학과">건축공학과</option>
+            <option value="건축학과">건축학과</option>
+            <option value="기계공학과">기계공학과</option>
+            <option value="메카트로닉스공학과">메카트로닉스공학과</option>
+            <option value="에너지공학과">에너지공학과</option>
+            <option value="컴퓨터공학과">컴퓨터공학과</option>
+          </datalist>
+          <input type="submit" name="" value="제츨">
+      </fieldset>
+      <textarea name="name" rows="8" cols="80"></textarea>
+      <button type="submit" name="button">전송하기</button>
+  </body>
+</html>
