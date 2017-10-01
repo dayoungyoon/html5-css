@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>캐스캐이딩스타일시트</title>
+    <script src="prefixfree.min.js">
+
+    </script>
+
+    <style media="screen">
+      @import url(//fonts.googleapis.com/earlyaccess/jejuhallasan.css);
+      body{
+
+        font-family:"Jeju Hallasan",맑은 고딕,돋움,굴림;
+
+      }
+      #head{
+        border: 1px solid gray;
+        padding: 10px;
+        color: green;
+      }
+      .heading{
+        color: red;
+      }
+      .box{
+        border: 1px solid green;
+        width: 200px;
+        height:100px;
+
+      }
+      .box:hover{
+        border: 1px solid green;
+        transform: rotate(15deg);
+        width: 200px;
+        height:100px;
+      }
+    </style>
+  </head>
+  <body>
+  <h1 class="heading" id="head">세계3대미항</h1>
+  <img src="images/rio.png" alt="브라질 리우데자네이루">
+  <ul>
+    <li>시드니</li>
+    <li>리우데자네이루</li>
+    <li>나폴리</li>
+  </ul>
+  <div class="box">
+      Mouse Over
+  </div>
+  </body>
+</html>
