@@ -12,8 +12,11 @@ width:1000px;
 
 margin:0 auto;
 }
+header{
+  width: 100%;
+}
 section{
-width:660px;
+width:750px;
 height:600px;
 
 float:left;
@@ -31,13 +34,19 @@ margin-top:15px;
 
 }
 aside{
-  width:300px;
-  height: 600px;
+  width: 240px;
   float:left;
+
+
+
+}
+.profile{
+  width:230px;
+  height: 565px;
 
   margin:0px;
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 55px;
 
 }
 
@@ -55,24 +64,26 @@ width:150px;
 }
 #text{
 line-height:50%;
+margin-bottom: 30px;
 }
 
 .JEJU{
-color:
+color:#00bfff;
+
 }
 #Travel{
 text-shadow:0px 8px 5px gray;
 
 }
+
 #TopMenu{
 height:30px;
-width:100%;
+
 background:#00bfff;
 
 }
 #TopMenu ul{
 list-style:none;
-margin:0px;
 padding:0px;
 }
 #TopMenu ul li{
@@ -83,6 +94,7 @@ line-height:30px;
 vertical-align:center;
 text-align:center;
 position:relative;
+width: 200px;
 }
 .menulink, .submenulink{
 text-decoration:none;
@@ -93,28 +105,34 @@ font-weight:bold;
 }
 .menulink{
 color:black;
+
 }
 .submenulink{
 color:white;
 background-color:#91cef7;
 border:1px solid gray;
 margin:-1px;
+width: 200px;
 }
 
 .submenu{
 height:0px;
-position:absolute;
-transition:height .2s;
--webkit-transition:height .2s;
+position: absolute;
+
 overflow:hidden;
 
 }
 #TopMenuLi:hover .menulink{
 color:gray;
 background-color:#72a1c1;
+
 }
 #TopMenuLi:hover .submenu{
 height:100px;
+width: 100px;
+width: 300px;
+position: absolute;
+
 }
 .submenulink:hover{
 color:gray;
@@ -123,15 +141,17 @@ background-color:#72a1c1;
 
 #search{
   float: right !important;
-  margin-top: 15px;
+  margin-top: 20px;
+  margin-right: 0px;
+
 }
 .title{
   width:100%;
-  height:400px;
-  border:1px solid gray;
+  height:250px;
+  
 }
 #title{
-  width: 1000px;
+
   height: 50px;
 }
 
@@ -148,43 +168,54 @@ background-color:#72a1c1;
       <h1 class="textcenter" id="Travel">Travel</h1>
 
     </div>
+    <nav id="TopMenu">
+
+      <ul>
+        <li id="TopMenuLi"><a class="menulink">제주시</a>
+          <ul  class="submenu">
+            <li><a class="submenulink">관광명소</a></li>
+            <li><a class="submenulink">맛집</a></li>
+            <li><a class="submenulink">버스정보</a></li>
+
+          </ul>
+        </li>
+
+        <li id="TopMenuLi"><a class="menulink">서귀포시</a>
+          <ul  class="submenu">
+            <li><a  class="submenulink">관광명소</a></li>
+            <li><a class="submenulink">맛집</a></li>
+            <li><a class="submenulink">버스정보</a></li>
+          </ul>
+        </li>
+
+        <li id="TopMenuLi"><a class="menulink">일상</li>
+          <li id="TopMenuLi"><a href="http://www.ijto.or.kr/korean/ " class="menulink">제주관광공사</li>
+
+
+          <li id="TopMenuLi"><a class="menulink">guest</li>
+
+
+     </ul>
+
+
+ </nav>
+
   </header>
 
-       <nav id="TopMenu">
-
-         <ul>
-           <li id="TopMenuLi"><a class="menulink">제주시</a>
-             <ul  class="submenu">
-               <li><a class="submenulink">관광명소</a></li>
-               <li><a class="submenulink">맛집</a></li>
-               <li><a class="submenulink">버스정보</a></li>
-
-             </ul>
-           </li>
-           <li>｜</li>
-           <li id="TopMenuLi"><a class="menulink">서귀포시</a>
-             <ul  class="submenu">
-               <li><a  class="submenulink">관광명소</a></li>
-               <li><a class="submenulink">맛집</a></li>
-               <li><a class="submenulink">버스정보</a></li>
-             </ul>
-           </li>
-           <li>｜</li>
-           <li id="TopMenuLi"><a class="menulink">일상</li>
-        </ul>
-
-
-    </nav>
 
 
 
 
   <section class="color"></section>
-  <aside class="color">
+  <aside class="border">
     <input id="search" type="submit" value="검색">
 
       <input id="search" type="search" name="" value="">
+    <div class="color profile">
 
+
+
+    </div>
   </aside>
 
   <footer >
